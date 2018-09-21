@@ -9,12 +9,15 @@ const { HashedModuleIdsPlugin } = require('webpack');
 module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/assets/js/main.js")
+        , diagrammeter: path.resolve(__dirname, "src/assets/js/diagrammeter.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: "/",
-        filename: 'assets/js/[name].[chunkhash].js',
-        chunkFilename: 'assets/js/[name].[chunkhash].js'
+        /*filename: 'assets/js/[name].[chunkhash].js',
+        chunkFilename: 'assets/js/[name].[chunkhash].js'*/
+        filename: 'assets/js/[name].js',
+        chunkFilename: 'assets/js/[name].js'
     },
     optimization: {
         runtimeChunk: {
@@ -94,12 +97,14 @@ module.exports = {
     },
     plugins: [
         //清空dist
+        /*
         new HashedModuleIdsPlugin(),
         new CleanWebpackPlugin(["dist"], {
             root: '',
             verbose: true,
             dry: false
         }),
+        */
         new CopyWebpackPlugin([{
             from: path.resolve(__dirname, "src/assets/img"),
             to: path.resolve(__dirname, "dist/assets/img")
@@ -109,18 +114,20 @@ module.exports = {
             to: path.resolve(__dirname, "dist/assets/media")
         }]),
         new MiniCssExtractPlugin({
-            filename: 'assets/css/[name].[chunkhash].min.css',
-            chunkFilename: 'assets/css/[name].[chunkhash].css'
+            filename: 'assets/css/[name].min.css',
+            chunkFilename: 'assets/css/[name]..css'
         }),
+        /*
         new HtmlWebpackPlugin({
             template: './src/index.html',
             inject: 'body',
             hash: false,
             minify: {
-                removeComments: true,
-                collapseWhitespace: true
+                removeComments: false,
+                collapseWhitespace: false
             }
         })
+        */
 
     ]
 };

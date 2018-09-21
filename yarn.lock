@@ -1390,6 +1390,12 @@ caniuse-lite@^1.0.30000844:
   version "1.0.30000885"
   resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000885.tgz#e889e9f8e7e50e769f2a49634c932b8aee622984"
 
+canvas@1.6.12:
+  version "1.6.12"
+  resolved "http://registry.npm.taobao.org/canvas/download/canvas-1.6.12.tgz#9ab02cdb6b543ae6705f566e33f9407625da901e"
+  dependencies:
+    nan "^2.10.0"
+
 caseless@~0.12.0:
   version "0.12.0"
   resolved "http://registry.npm.taobao.org/caseless/download/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"

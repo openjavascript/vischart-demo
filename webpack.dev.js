@@ -8,7 +8,7 @@ module.exports = merge(common, {
     devtool: 'eval',
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
-        port: 9000,
+        port: 9666,
         disableHostCheck: true,
         host: '0.0.0.0',
     },

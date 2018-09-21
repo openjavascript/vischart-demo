@@ -30,6 +30,12 @@ module.exports = {
             }
         }
     },
+    resolve: {
+        extensions: ['.js']
+        , alias: {
+            "vischart": "/home/qiushaowei/udocs/website/vischart/dist/index.js"
+        }
+    },
     module: {
         rules: [{
             test: /(\.jsx|\.js)$/,

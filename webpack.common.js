@@ -10,6 +10,7 @@ module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/assets/js/main.js")
         , diagrammeter: path.resolve(__dirname, "src/assets/js/diagrammeter.js")
+        , dount: path.resolve(__dirname, "src/assets/js/dount.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -36,7 +37,7 @@ module.exports = {
     resolve: {
         extensions: ['.js']
         , alias: {
-            "vischart": "/home/qiushaowei/udocs/website/vischart/dist/index.js"
+            "vischart": "/home/qiushaowei/udocs/website/vis/vischart/dist/index.js"
         }
     },
     module: {
@@ -83,7 +84,8 @@ module.exports = {
                     outputPath: 'assets/css/'
                 }
             }
-        }, {
+        }
+        , {
             test: /\.html$/,
             use: {
                 loader: 'html-loader',
@@ -93,7 +95,9 @@ module.exports = {
                     collapseWhitespace: false
                 }
             }
-        }]
+        }
+
+        ]
     },
     plugins: [
         //清空dist

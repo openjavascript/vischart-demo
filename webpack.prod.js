@@ -21,7 +21,6 @@ module.exports = merge(common, {
     },
     optimization: {
         minimizer: [
-            /*
             new UglifyJsPlugin({
                 sourceMap: true,
                 uglifyOptions: {
@@ -39,7 +38,6 @@ module.exports = merge(common, {
                     }
                 }
             }),
-            */
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/,
                 cssProcessor: require('cssnano')({ zindex: false }),

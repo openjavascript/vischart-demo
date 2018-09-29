@@ -9,7 +9,7 @@ const { HashedModuleIdsPlugin } = require('webpack');
 module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/assets/js/main.js")
-        , diagrammeter: path.resolve(__dirname, "src/assets/js/diagrammeter.js")
+        , gauge: path.resolve(__dirname, "src/assets/js/gauge.js")
         , dount: path.resolve(__dirname, "src/assets/js/dount.js")
     },
     output: {

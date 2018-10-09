@@ -9,8 +9,9 @@ import fontfaceobserver from 'fontfaceobserver';
 let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
-    let data = require( './data/dount.json' );
-    let dmins = new VisChart( document.querySelector('#twoBox'), 330, 330 );
+    //let data = require( './data/dount.json' );
+    let data = require( './data/dount-tight8.json' );
+    let dmins = new VisChart( document.querySelector('#twoBox'), 400, 330 );
         dmins.addImage( './img/dount-in.png', 120, 120, 0, 1 );
         dmins.addImage( './img/dount-big.png', 250, 248, 0, 1 );
         dmins.update( data ); 

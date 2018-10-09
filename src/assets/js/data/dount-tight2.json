@@ -84,14 +84,14 @@
             "data": [
                 {
                     "name": "DNS访问",
-                    "value": 20000,
+                    "value": 150000,
                     "itemStyle": {
                         "color": "#f12575"
                     }
                 },
                 {
                     "name": "读",
-                    "value": 51611,
+                    "value": 11611,
                     "itemStyle": {
                         "color": "#da432e"
                     }
@@ -119,7 +119,7 @@
                 },
                 {
                     "name": "其他",
-                    "value": 29658,
+                    "value": 9658,
                     "itemStyle": {
                         "color": "#b56be8"
                     }

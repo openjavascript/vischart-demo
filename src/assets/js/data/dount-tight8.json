@@ -84,7 +84,7 @@
             "data": [
                 {
                     "name": "DNS访问",
-                    "value": 20000,
+                    "value": 120000,
                     "itemStyle": {
                         "color": "#f12575"
                     }
@@ -111,6 +111,14 @@
                     }
                 },
                 {
+                    "name": "写1",
+                    "value": 10576,
+                    "itemStyle": {
+                        "color": "#19af89"
+                    }
+                },
+
+                {
                     "name": "删除",
                     "value": 9018,
                     "itemStyle": {
@@ -119,7 +127,7 @@
                 },
                 {
                     "name": "其他",
-                    "value": 29658,
+                    "value": 209658,
                     "itemStyle": {
                         "color": "#b56be8"
                     }

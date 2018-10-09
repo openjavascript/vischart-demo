@@ -9,8 +9,10 @@ import fontfaceobserver from 'fontfaceobserver';
 let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
+    let size = 330;
+
     let data = require( './data/gauge.json' );
-    let dmins = new VisChart( document.querySelector('#twoBox'), 330, 330 );
+    let dmins = new VisChart( document.querySelector('#twoBox'), size, size );
         dmins.addImage( './img/rate-out.png', 170, 170, 0, 0 );
         dmins.update( data ); 
         setTimeout( ()=>{

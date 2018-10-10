@@ -41,6 +41,14 @@
                 }
             },
             {
+                "name": "写1",
+                "textStyle": {
+                    "color": "#19af89",
+                    "fontWeight": "150"
+                }
+            },
+
+            {
                 "name": "删除",
                 "textStyle": {
                     "color": "#24a3ea",

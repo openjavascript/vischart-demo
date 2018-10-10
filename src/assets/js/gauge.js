@@ -4,8 +4,6 @@ import VisChart from 'vischart';
 
 import fontfaceobserver from 'fontfaceobserver';
 
-
-
 let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 

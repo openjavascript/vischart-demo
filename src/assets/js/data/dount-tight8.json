@@ -7,50 +7,50 @@
         "orient": "vertical",
         "bottom": "16px",
         "right": "8%",
-        "itemWidth": 10,
-        "itemHeight": 10,
+        "itemWidth": 4,
+        "itemHeight": 12,
         "borderRadius": 4,
         "column": 3,
         "data": [
             {
                 "name": "DNS访问",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#f12575",
                     "fontWeight": "150"
                 }
             },
             {
                 "name": "读",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#da432e",
                     "fontWeight": "150"
                 }
             },
             {
                 "name": "TCP外连接",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#f3a42d",
                     "fontWeight": "150"
                 }
             },
             {
                 "name": "写",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#19af89",
                     "fontWeight": "150"
                 }
             },
             {
                 "name": "删除",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#24a3ea",
                     "fontWeight": "150"
                 }
             },
             {
                 "name": "其他",
                 "textStyle": {
-                    "color": "#1987fa",
+                    "color": "#b56be8",
                     "fontWeight": "150"
                 }
             }

@@ -6,6 +6,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { HashedModuleIdsPlugin } = require('webpack');
 
+function getUserHome() {
+    return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+}
+
 module.exports = {
     entry: {
         main: path.resolve(__dirname, "src/assets/js/main.js")
@@ -37,8 +41,8 @@ module.exports = {
     resolve: {
         extensions: ['.js']
         , alias: {
-            //"vischart": "/home/qiushaowei/udocs/website/vis/vischart/dist/index.js"
-            "vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
+            "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
+            //"vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
         }
     },
     module: {

@@ -10,6 +10,7 @@
         "itemWidth": 10,
         "itemHeight": 10,
         "borderRadius": 4,
+        "column": 3,
         "data": [
             {
                 "name": "DNS访问",
@@ -133,6 +134,23 @@
                     }
                 }
             ],
+            "background": [
+                { 
+                    "url": "./img/dount-in.png"
+                    , "width": 120
+                    , "height": 120
+                    , "offsetX": 0
+                    , "offsetY": 1
+                }
+                , { 
+                    "url": "./img/dount-big.png"
+                    , "width": 250
+                    , "height": 248
+                    , "offsetX": 0
+                    , "offsetY": 1
+                }
+            ],
+
             "z": 1
         }
     ]

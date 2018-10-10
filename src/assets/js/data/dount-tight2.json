@@ -10,6 +10,7 @@
         "itemWidth": 10,
         "itemHeight": 10,
         "borderRadius": 4,
+        "column": 3,
         "data": [
             {
                 "name": "DNS访问",
@@ -139,6 +140,7 @@
                     , "height": 248
                     , "offsetX": 0
                     , "offsetY": 1
+                    , "rotation": 1
                 }
             ],
 

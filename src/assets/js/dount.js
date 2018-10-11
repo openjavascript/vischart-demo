@@ -39,14 +39,14 @@ let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
     //let data = require( './data/dount.json' );
-    let data = require( './data/dount-tight2.json' );
+    let data = require( './data/dount-tight8.json' );
         data 
         && data.series 
         && data.series.map( item => {
             item.background = background;
         });
         
-    let dmins = new VisChart( document.querySelector('#twoBox'), 410, 330 );
+    let dmins = new VisChart( document.querySelector('#twoBox'), 386, 283 );
         dmins.update( data ); 
 
 }, function () {

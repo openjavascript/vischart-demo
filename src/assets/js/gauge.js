@@ -34,10 +34,12 @@ font.load().then(function () {
             item.background = background;
         });
 
-    console.log( data );
-
-    let dmins = new VisChart( document.querySelector('#twoBox'), size, 250 );
+    let dmins = new VisChart( document.querySelector('#twoBox'), 386, 283 );
         dmins.update( data ); 
+
+    setTimeout( ()=>{
+        //dmins.destroy();
+    }, 3000 );
 
 }, function () {
   console.log('Font is not available');

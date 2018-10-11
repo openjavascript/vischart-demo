@@ -4,7 +4,7 @@ import VisChart from 'vischart';
 
 import fontfaceobserver from 'fontfaceobserver';
 
-import { dountBig, dountIn } from './data/base64img.js';
+import * as base64img from './data/base64img.js';
 
 
 //console.log( dountBig, dountIn );
@@ -12,7 +12,7 @@ import { dountBig, dountIn } from './data/base64img.js';
 let background = [
     { 
         //"url": "./img/dount-in.png"
-        "url": dountIn
+        "url": base64img.dountIn
         , "isbase64": true
         , 'base64prefix': 'data:image/png;base64,'
         , "width": 120
@@ -22,7 +22,7 @@ let background = [
     }
     , { 
         //"url": "./img/dount-big.png"
-        "url": dountBig
+        "url": base64img.dountBig
         , "isbase64": true
         , 'base64prefix': 'data:image/png;base64,'
         , "width": 250
@@ -48,10 +48,6 @@ font.load().then(function () {
         
     let dmins = new VisChart( document.querySelector('#twoBox'), 410, 330 );
         dmins.update( data ); 
-
-        setTimeout( ()=>{
-            //dmins.update( data ); 
-        }, 5000 );
 
 }, function () {
   console.log('Font is not available');

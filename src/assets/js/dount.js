@@ -49,7 +49,7 @@ font.load().then(function () {
     let box = document.querySelector('#twoBox');
         
     let dmins = new VisChart( box );
-        dmins.update( data ); 
+        dmins.update( data, true ); 
 
     setInterval( ()=>{
         //console.log( 'ins', Date.now() );

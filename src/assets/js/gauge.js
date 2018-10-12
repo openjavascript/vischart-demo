@@ -29,7 +29,7 @@ font.load().then(function () {
 
     let box = document.querySelector('#twoBox');
 
-    let data = require( './data/gauge.json' );
+    let data = require( './data/gauge1100.json' );
         data 
         && data.series 
         && data.series.map( item => {
@@ -37,7 +37,7 @@ font.load().then(function () {
         });
 
     let dmins = new VisChart( box );
-        dmins.update( data ); 
+        dmins.update( data, 1 ); 
 
     setInterval( ()=>{
         //console.log( 'ins', Date.now() );
@@ -45,8 +45,8 @@ font.load().then(function () {
             dmins.destroy();
         }
         dmins = new VisChart( box );*/
-        dmins.update( data ); 
-    }, 5000 );
+        dmins.update( data, 1 ); 
+    }, 2000 );
 
     setTimeout( ()=>{
         //dmins.destroy();

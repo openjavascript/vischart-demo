@@ -53,11 +53,13 @@ font.load().then(function () {
         dmins.update( data, true ); 
 
     setInterval( ()=>{
-        //console.log( 'ins', Date.now() );
-        /*if( dmins ){
-            dmins.destroy();
-        }
-        dmins = new VisChart( box );*/
+        let data = require( './data/dount-tight8-1.json' );
+        data 
+        && data.series 
+        && data.series.map( item => {
+            item.background = background;
+        });
+
         dmins.update( data, true ); 
     }, 5000 );
 

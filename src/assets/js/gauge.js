@@ -9,6 +9,7 @@ import * as base64img from './data/base64img.js';
 let Data = require( './data/gauge.json' );
 let Data0 = require( './data/gauge0.json' );
 let Data1100 = require( './data/gauge1100.json' );
+let DataDisableAnimation = require( './data/gauge-disable-animation.json' );
 
 let background = [
     { 
@@ -33,6 +34,7 @@ font.load().then(function () {
     let box = document.querySelector('#twoBox');
 
     let data = Data;
+        //data = DataDisableAnimation;
         data 
         && data.series 
         && data.series.map( item => {
@@ -55,7 +57,7 @@ font.load().then(function () {
             dmins.destroy();
         }
         dmins = new VisChart( box );*/
-        dmins.update( data, 1 ); 
+        //dmins.update( data, 1 ); 
     }, 2000 );
 
     setTimeout( ()=>{

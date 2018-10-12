@@ -40,6 +40,7 @@ font.load().then(function () {
 
     //let data = require( './data/dount.json' );
     let data = require( './data/dount-tight8.json' );
+    //let data = require( './data/dount-disable-animation.json' );
         data 
         && data.series 
         && data.series.map( item => {
@@ -57,7 +58,7 @@ font.load().then(function () {
             dmins.destroy();
         }
         dmins = new VisChart( box );*/
-        //dmins.update( data, true ); 
+        dmins.update( data, true ); 
     }, 5000 );
 
     setTimeout( ()=>{

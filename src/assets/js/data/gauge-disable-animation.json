@@ -1,0 +1,14 @@
+{
+    "animation": false,
+    "series": [
+        {
+            "type": "gauge",
+            "data": [
+                {
+                    "value": 1100,
+                    "total": 1345667
+                }
+            ]
+        }
+    ]
+}

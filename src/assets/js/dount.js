@@ -57,7 +57,7 @@ font.load().then(function () {
             dmins.destroy();
         }
         dmins = new VisChart( box );*/
-        dmins.update( data, true ); 
+        //dmins.update( data, true ); 
     }, 5000 );
 
     setTimeout( ()=>{

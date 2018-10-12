@@ -6,6 +6,9 @@ import fontfaceobserver from 'fontfaceobserver';
 
 import * as base64img from './data/base64img.js';
 
+let Data = require( './data/gauge.json' );
+let Data0 = require( './data/gauge0.json' );
+let Data1100 = require( './data/gauge1100.json' );
 
 let background = [
     { 
@@ -29,7 +32,7 @@ font.load().then(function () {
 
     let box = document.querySelector('#twoBox');
 
-    let data = require( './data/gauge1100.json' );
+    let data = Data;
         data 
         && data.series 
         && data.series.map( item => {
@@ -40,6 +43,13 @@ font.load().then(function () {
         dmins.update( data, 1 ); 
 
     setInterval( ()=>{
+        let data = Data1100;
+            data 
+            && data.series 
+            && data.series.map( item => {
+                item.background = background;
+            });
+
         //console.log( 'ins', Date.now() );
         /*if( dmins ){
             dmins.destroy();

@@ -45,9 +45,30 @@ font.load().then(function () {
         && data.series.map( item => {
             item.background = background;
         });
+
+    let box = document.querySelector('#twoBox');
         
-    let dmins = new VisChart( document.querySelector('#twoBox'), 386, 283 );
+    let dmins = new VisChart( box );
         dmins.update( data ); 
+
+    setInterval( ()=>{
+        //console.log( 'ins', Date.now() );
+        /*if( dmins ){
+            dmins.destroy();
+        }
+        dmins = new VisChart( box );*/
+        dmins.update( data, true ); 
+    }, 5000 );
+
+    setTimeout( ()=>{
+        //dmins.destroy();
+        //dmins.resize( 500, 500 );
+        //box.style.width = '500px';
+        //box.style.height = '500px';
+        //dmins.resize( 600, 600 );
+        //dmins.update( data ); 
+    }, 3000 );
+
 
 }, function () {
   console.log('Font is not available');

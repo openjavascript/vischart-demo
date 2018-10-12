@@ -27,6 +27,8 @@ font.load().then(function () {
 
     let size = 330;
 
+    let box = document.querySelector('#twoBox');
+
     let data = require( './data/gauge.json' );
         data 
         && data.series 
@@ -34,11 +36,27 @@ font.load().then(function () {
             item.background = background;
         });
 
-    let dmins = new VisChart( document.querySelector('#twoBox'), 386, 283 );
+    let dmins = new VisChart( box );
         dmins.update( data ); 
+
+    setInterval( ()=>{
+        //console.log( 'ins', Date.now() );
+        /*if( dmins ){
+            dmins.destroy();
+        }
+        dmins = new VisChart( box );*/
+        dmins.update( data ); 
+    }, 5000 );
 
     setTimeout( ()=>{
         //dmins.destroy();
+        //dmins.resize( 500, 500 );
+        /*
+        box.style.width = '500px';
+        box.style.height = '500px';
+        dmins.resize();
+        dmins.update( data ); 
+        */
     }, 3000 );
 
 }, function () {

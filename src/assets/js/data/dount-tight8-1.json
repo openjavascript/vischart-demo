@@ -43,7 +43,7 @@
             {
                 "name": "写1",
                 "textStyle": {
-                    "color": "#19af89",
+                    "color": "#c9af89",
                     "fontWeight": "150"
                 }
             },
@@ -123,7 +123,7 @@
                     "name": "写1",
                     "value": 10576,
                     "itemStyle": {
-                        "color": "#19af89"
+                        "color": "#c9af89"
                     }
                 },
 

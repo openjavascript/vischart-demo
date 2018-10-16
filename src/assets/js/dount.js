@@ -38,7 +38,7 @@ let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
     //let data = require( './data/dount.json' );
-    let data = require( './data/dount-tight8.json' );
+    let data = require( './data/dount-tight4.json' );
     //let data = require( './data/dount-real1.json' );
     //let data = require( './data/dount-disable-animation.json' );
         data 
@@ -54,7 +54,8 @@ font.load().then(function () {
         dmins.update( data, true ); 
 
     setInterval( ()=>{
-        let data = require( './data/dount-tight8-1.json' );
+        //let data = require( './data/dount-tight8-1.json' );
+        let data = require( './data/dount-tight4-1.json' );
         //let data = require( './data/dount-real1.json' );
         data 
         && data.series 
@@ -63,17 +64,26 @@ font.load().then(function () {
         });
 
         common.setColor( data );
+        dmins.resize( 500, 500 );
 
-        dmins.update( data, true ); 
-    }, 5000 );
+        dmins.update( data, true, 0 ); 
+    }, 2000 );
 
     setTimeout( ()=>{
-        //dmins.destroy();
-        //dmins.resize( 500, 500 );
-        //box.style.width = '500px';
-        //box.style.height = '500px';
-        //dmins.resize( 600, 600 );
-        //dmins.update( data ); 
+        /*//let data = require( './data/dount-tight8-1.json' );
+        let data = require( './data/dount-tight4-1.json' );
+        //let data = require( './data/dount-real1.json' );
+        data 
+        && data.series 
+        && data.series.map( item => {
+            item.background = background;
+        });
+
+        //common.setColor( data );
+        dmins.resize( 500, 500 );
+
+        //dmins.update( data, true, 0 ); */
+
     }, 3000 );
 
 

@@ -52,23 +52,28 @@ font.load().then(function () {
                 item.background = background;
             });
 
-        //console.log( 'ins', Date.now() );
+        console.log( 'ins', Date.now() );
         /*if( dmins ){
             dmins.destroy();
         }
         dmins = new VisChart( box );*/
-        dmins.update( data, 1 ); 
+        dmins.update( data, 0, 0 ); 
     }, 2000 );
 
     setTimeout( ()=>{
-        //dmins.destroy();
-        //dmins.resize( 500, 500 );
-        /*
-        box.style.width = '500px';
-        box.style.height = '500px';
-        dmins.resize();
-        dmins.update( data ); 
-        */
+        /*let data = Data1100;
+            data 
+            && data.series 
+            && data.series.map( item => {
+                item.background = background;
+            });
+
+        console.log( 'ins', Date.now() );
+        [>if( dmins ){
+            dmins.destroy();
+        }
+        dmins = new VisChart( box );<]
+        dmins.resize( 500, 500, data ); */
     }, 3000 );
 
 }, function () {

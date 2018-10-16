@@ -53,7 +53,38 @@ font.load().then(function () {
     let dmins = new VisChart( box );
         dmins.update( data, true ); 
 
+    window.addEventListener( 'resize', ()=>{
+
+        window.tmpTimeout && clearTimeout( window.tmpTimeout );
+
+        window.tmpTimeout = setTimeout( ()=>{
+            console.log( 'onresize', Date.now(), window.innerHeight );
+            let size = window.innerHeight / 2;
+
+            dmins.resize( size, size );
+        }, 1000 );
+    });
     setInterval( ()=>{
+        //let data = require( './data/dount-tight8-1.json' );
+        let data = require( './data/dount-tight4-1.json' );
+        //let data = require( './data/dount-real1.json' );
+        data 
+        && data.series 
+        && data.series.map( item => {
+            item.background = background;
+        });
+
+        common.setColor( data );
+        //dmins.resize( 500, 500, data );
+        dmins.update( data, 1, 0 );
+
+    }, 2000 );
+
+/*
+*/
+
+    /*
+    setTimeout( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
         //let data = require( './data/dount-real1.json' );
@@ -66,11 +97,10 @@ font.load().then(function () {
         common.setColor( data );
         dmins.resize( 500, 500 );
 
-        dmins.update( data, true, 0 ); 
-    }, 2000 );
+    }, 3000 );
 
     setTimeout( ()=>{
-        /*//let data = require( './data/dount-tight8-1.json' );
+        //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
         //let data = require( './data/dount-real1.json' );
         data 
@@ -79,12 +109,11 @@ font.load().then(function () {
             item.background = background;
         });
 
-        //common.setColor( data );
-        dmins.resize( 500, 500 );
+        common.setColor( data );
+        dmins.update( data, true, 0 ); 
 
-        //dmins.update( data, true, 0 ); */
+    }, 4000 );*/
 
-    }, 3000 );
 
 
 }, function () {

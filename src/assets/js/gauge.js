@@ -29,7 +29,7 @@ let background = [
 let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
-    let size = 330;
+    let size = 300;
 
     let box = document.querySelector('#twoBox');
 
@@ -41,8 +41,22 @@ font.load().then(function () {
             item.background = background;
         });
 
-    let dmins = new VisChart( box );
+
+
+    let dmins = new VisChart( box, 386, 283 );
         dmins.update( data, 1 ); 
+
+    window.addEventListener( 'resize', ()=>{
+
+        window.tmpTimeout && clearTimeout( window.tmpTimeout );
+
+        window.tmpTimeout = setTimeout( ()=>{
+            console.log( 'onresize', Date.now(), window.innerHeight );
+            let size = window.innerHeight / 2;
+
+            dmins.resize( size, size );
+        }, 1000 );
+    });
 
     setInterval( ()=>{
         let data = Data1100;
@@ -51,30 +65,37 @@ font.load().then(function () {
             && data.series.map( item => {
                 item.background = background;
             });
-
-        console.log( 'ins', Date.now() );
-        /*if( dmins ){
-            dmins.destroy();
-        }
-        dmins = new VisChart( box );*/
-        dmins.update( data, 0, 0 ); 
+        dmins.resize( 500, 500, data ); 
     }, 2000 );
 
+/*
+
     setTimeout( ()=>{
-        /*let data = Data1100;
+        let data = Data1100;
             data 
             && data.series 
             && data.series.map( item => {
                 item.background = background;
             });
 
-        console.log( 'ins', Date.now() );
-        [>if( dmins ){
-            dmins.destroy();
-        }
-        dmins = new VisChart( box );<]
-        dmins.resize( 500, 500, data ); */
+        dmins.resize( 300, 300, data ); 
     }, 3000 );
+
+    setTimeout( ()=>{
+        let data = Data1100;
+            data 
+            && data.series 
+            && data.series.map( item => {
+                item.background = background;
+            });
+
+
+        dmins.resize( 386, 250, data ); 
+    }, 3000 );
+
+*/
+
+
 
 }, function () {
   console.log('Font is not available');

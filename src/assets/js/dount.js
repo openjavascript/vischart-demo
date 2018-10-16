@@ -6,8 +6,7 @@ import fontfaceobserver from 'fontfaceobserver';
 
 import * as base64img from './data/base64img.js';
 
-
-//console.log( dountBig, dountIn );
+import * as common from './common.js';
 
 let background = [
     { 
@@ -40,12 +39,14 @@ font.load().then(function () {
 
     //let data = require( './data/dount.json' );
     let data = require( './data/dount-tight8.json' );
+    //let data = require( './data/dount-real1.json' );
     //let data = require( './data/dount-disable-animation.json' );
         data 
         && data.series 
         && data.series.map( item => {
             item.background = background;
         });
+    common.setColor( data );
 
     let box = document.querySelector('#twoBox');
         
@@ -54,11 +55,14 @@ font.load().then(function () {
 
     setInterval( ()=>{
         let data = require( './data/dount-tight8-1.json' );
+        //let data = require( './data/dount-real1.json' );
         data 
         && data.series 
         && data.series.map( item => {
             item.background = background;
         });
+
+        common.setColor( data );
 
         dmins.update( data, true ); 
     }, 5000 );

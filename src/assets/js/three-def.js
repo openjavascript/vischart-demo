@@ -64,7 +64,7 @@ font.load().then(function () {
             dmins.resize( size, size );
         }, 1000 );
     });
-    setInterval( ()=>{
+    /*setInterval( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
         //let data = require( './data/dount-real1.json' );
@@ -79,7 +79,7 @@ font.load().then(function () {
         dmins.update( data, 1, 0 );
 
     }, 2000 );
-
+*/
 /*
 */
 

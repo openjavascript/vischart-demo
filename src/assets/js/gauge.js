@@ -41,10 +41,8 @@ font.load().then(function () {
             item.background = background;
         });
 
-
-
     let dmins = new VisChart( box, 386, 283 );
-        dmins.update( data, 1 ); 
+        dmins.update( data, 1, 0 ); 
 
     window.addEventListener( 'resize', ()=>{
 
@@ -65,7 +63,8 @@ font.load().then(function () {
             && data.series.map( item => {
                 item.background = background;
             });
-        dmins.resize( 500, 500, data ); 
+        //dmins.resize( 500, 500 ); 
+        dmins.update( data, 1, 0 );
     }, 2000 );
 
 /*

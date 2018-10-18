@@ -45,7 +45,7 @@
         "json-loader": "0.5.7",
         "json-utilsx": "1.0.7",
         "stats.js": "^0.17.0",
-        "vischart": "^1.0.1"
+        "vischart": "^1.0.15"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

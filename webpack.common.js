@@ -15,6 +15,8 @@ module.exports = {
         main: path.resolve(__dirname, "src/assets/js/main.js")
         , gauge: path.resolve(__dirname, "src/assets/js/gauge.js")
         , dount: path.resolve(__dirname, "src/assets/js/dount.js")
+
+        , 'three-def': path.resolve(__dirname, "src/assets/js/three-def.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

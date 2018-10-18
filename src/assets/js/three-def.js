@@ -12,7 +12,7 @@ import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
 import svgDountIn from './data-3d/svg/dount-in.txt';
 import svgDountBig from './data-3d/svg/dount-big.txt';
 
-console.log( 'svnDountBigAll', svgDountBigAll );
+//console.log( 'svnDountBigAll', svgDountBigAll );
 
 let background = [
     { 
@@ -51,6 +51,8 @@ font.load().then(function () {
             item.background = background;
         });
     common.setColor( data );
+
+    data.background = background;
 
     let box = document.querySelector('#twoBox');
         

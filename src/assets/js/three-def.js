@@ -8,12 +8,17 @@ import * as base64img from './data/base64img.js';
 
 import * as common from './common.js';
 
+import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
+import svgDountIn from './data-3d/svg/dount-in.txt';
+import svgDountBig from './data-3d/svg/dount-big.txt';
+
+console.log( 'svnDountBigAll', svgDountBigAll );
+
 let background = [
     { 
         //"url": "./img/dount-in.png"
-        "url": base64img.dountIn
-        , "isbase64": true
-        , 'base64prefix': 'data:image/png;base64,'
+        "url":svgDountIn
+        , "issvg": true
         , "width": 120
         , "height": 120
         , "offsetX": 0
@@ -21,9 +26,8 @@ let background = [
     }
     , { 
         //"url": "./img/dount-big.png"
-        "url": base64img.dountBig
-        , "isbase64": true
-        , 'base64prefix': 'data:image/png;base64,'
+        "url": svgDountBig
+        , "issvg": true
         , "width": 250
         , "height": 248
         , "offsetX": 0
@@ -53,7 +57,7 @@ font.load().then(function () {
     let dmins = new VisChart.three( box );
         dmins.update( data, true ); 
 
-    window.addEventListener( 'resize', ()=>{
+    /*window.addEventListener( 'resize', ()=>{
 
         window.tmpTimeout && clearTimeout( window.tmpTimeout );
 
@@ -63,7 +67,7 @@ font.load().then(function () {
 
             dmins.resize( size, size );
         }, 1000 );
-    });
+    });*/
     /*setInterval( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );

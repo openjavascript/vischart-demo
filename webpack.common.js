@@ -103,7 +103,10 @@ module.exports = {
                 }
             }
         }
-
+          , {
+            test: /\.txt$/,
+            use: 'raw-loader'
+          }
         ]
     },
     plugins: [

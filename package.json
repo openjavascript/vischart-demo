@@ -39,11 +39,13 @@
     "dependencies": {
         "@fdaciuk/ajax": "^2.3.0",
         "animate.css": "^3.5.2",
+        "file-loader": "^2.0.0",
         "fontfaceobserver": "2.0.13",
         "gsap": "^1.20.3",
         "howler": "^2.0.5",
         "json-loader": "0.5.7",
         "json-utilsx": "1.0.7",
+        "raw-loader": "^0.5.1",
         "stats.js": "^0.17.0",
         "vischart": "^1.0.1"
     },

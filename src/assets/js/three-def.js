@@ -18,22 +18,23 @@ let background = [
     { 
         //"url": "./img/dount-in.png"
         "url":svgDountIn
-        , "issvg": true
+        , "issvgstring": true
         , "width": 120
         , "height": 120
-        , "offsetX": 0
-        , "offsetY": 1
+        , "offsetX": 9
+        , "offsetY": 0
     }
-    , { 
+    /*, 
+    { 
         //"url": "./img/dount-big.png"
         "url": svgDountBig
-        , "issvg": true
+        , "issvgstring": true
         , "width": 250
         , "height": 248
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
-    }
+    }*/
 ];
 
 //console.log( background );
@@ -52,7 +53,7 @@ font.load().then(function () {
         });
     common.setColor( data );
 
-    data.background = background;
+    let size = 500;
 
     let box = document.querySelector('#twoBox');
         

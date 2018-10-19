@@ -65,7 +65,7 @@ font.load().then(function () {
             });
         //dmins.resize( 500, 500 ); 
         dmins.update( data, 1, 0 );
-    }, 2000 );
+    }, 5000 );
 
 /*
 

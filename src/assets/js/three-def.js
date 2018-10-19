@@ -24,7 +24,7 @@ let background = [
         , "offsetX": 9
         , "offsetY": 0
     }
-    /*, 
+    ,
     { 
         //"url": "./img/dount-big.png"
         "url": svgDountBig
@@ -34,7 +34,7 @@ let background = [
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
-    }*/
+    }
 ];
 
 //console.log( background );
@@ -52,6 +52,7 @@ font.load().then(function () {
             item.background = background;
         });
     common.setColor( data );
+
 
     let size = 500;
 

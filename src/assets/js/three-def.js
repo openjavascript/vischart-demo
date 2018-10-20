@@ -23,6 +23,8 @@ let background = [
         , "height": 120
         , "offsetX": 9
         , "offsetY": 0
+        , "rotation": 1
+        , "rotationAttr": 'y'
     }
     ,
     { 
@@ -34,6 +36,8 @@ let background = [
         , "offsetX": 0
         , "offsetY": 1
         , "rotation": 1
+        , "rotationAttr": 'z'
+        //, "rotationStep":  -0.03
     }
 ];
 
@@ -59,6 +63,14 @@ font.load().then(function () {
     let box = document.querySelector('#twoBox');
         
     let dmins = new VisChart.three( box );
+        dmins.updateThreeConfig( {
+            camera: {
+                fov: 40
+            }
+            , cameraPosition: {
+                //z: 300
+            }
+        });
         dmins.update( data, true ); 
 
     /*window.addEventListener( 'resize', ()=>{

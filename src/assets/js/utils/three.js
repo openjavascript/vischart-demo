@@ -1,4 +1,4 @@
 
-const r = window.THREE;
+let r = window.THREE;
 
 export default r;

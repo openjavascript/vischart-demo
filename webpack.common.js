@@ -43,7 +43,8 @@ module.exports = {
     resolve: {
         extensions: ['.js']
         , alias: {
-            "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
+            "three": path.resolve(__dirname, 'src/assets/js/utils/three.js')
+            , "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
             //"vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
         }
     },

@@ -12,6 +12,10 @@ import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
 import svgDountIn from './data-3d/svg/dount-in.txt';
 import svgDountBig from './data-3d/svg/dount-big.txt';
 
+import fontjson from './data-3d/fonts/helvetiker_bold.typeface.json';
+
+window.fontjson = fontjson;
+
 //console.log( 'svnDountBigAll', svgDountBigAll );
 
 let background = [

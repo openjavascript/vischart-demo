@@ -12,11 +12,7 @@ function getUserHome() {
 
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, "src/assets/js/main.js")
-        , gauge: path.resolve(__dirname, "src/assets/js/gauge.js")
-        , dount: path.resolve(__dirname, "src/assets/js/dount.js")
-
-        , 'three-def': path.resolve(__dirname, "src/assets/js/three-def.js")
+        'three-def': path.resolve(__dirname, "src/assets/js/three-def.js")
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -43,7 +39,7 @@ module.exports = {
     resolve: {
         extensions: ['.js']
         , alias: {
-            "three": getUserHome() + "/udocs/website/vis/vischart-demo/src/assets/js/utils/three.js"
+            "three": path.resolve(__dirname, "src/assets/js/utils/three.js")
             , "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
             //"vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
         }

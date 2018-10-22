@@ -67,7 +67,7 @@ font.load().then(function () {
 
     let box = document.querySelector('#twoBox');
         
-    let dmins = new VisChart.three( box );
+    let dmins = new VisChart( box );
         dmins.updateThreeConfig( {
             camera: {
                 fov: 40

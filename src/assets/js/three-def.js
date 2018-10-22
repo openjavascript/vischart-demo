@@ -12,7 +12,8 @@ import svgDountBigAll from './data-3d/svg/dount-big-all.txt';
 import svgDountIn from './data-3d/svg/dount-in.txt';
 import svgDountBig from './data-3d/svg/dount-big.txt';
 
-import fontjson from './data-3d/fonts/helvetiker_bold.typeface.json';
+//import fontjson from './data-3d/fonts/gentilis_regular.typeface.json';
+import fontjson from './data-3d/fonts/droid/droid_serif_regular.typeface.json';
 
 window.fontjson = fontjson;
 

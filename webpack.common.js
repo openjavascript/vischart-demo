@@ -40,7 +40,7 @@ module.exports = {
         extensions: ['.js']
         , alias: {
             "three": path.resolve(__dirname, "src/assets/js/utils/three.js")
-            , "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
+            , "vis3chart": getUserHome() + "/udocs/website/vis3/vis3chart/dist/index.js"
             //"vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
         }
     },

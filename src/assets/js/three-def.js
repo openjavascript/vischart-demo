@@ -1,6 +1,6 @@
 
 
-import VisChart from 'vischart';
+import Vis3Chart from 'vis3chart';
 
 import fontfaceobserver from 'fontfaceobserver';
 
@@ -67,7 +67,7 @@ font.load().then(function () {
 
     let box = document.querySelector('#twoBox');
         
-    let dmins = new VisChart( box );
+    let dmins = new Vis3Chart( box );
         dmins.updateThreeConfig( {
             camera: {
                 fov: 40

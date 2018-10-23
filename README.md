@@ -9,7 +9,7 @@
   
   [https://openjavascript.github.io/vischart-demo/dist/gauge.html](https://openjavascript.github.io/vischart-demo/dist/gauge.html)
 
-## three support move to another project
+## threejs support move to another project
 
    [https://github.com/openjavascript/vis3chart-demo](https://github.com/openjavascript/vis3chart-demo)
    

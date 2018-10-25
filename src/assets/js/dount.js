@@ -65,6 +65,7 @@ font.load().then(function () {
         }, 1000 );
     });
     setInterval( ()=>{
+    //setTimeout( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
         //let data = require( './data/dount-real1.json' );

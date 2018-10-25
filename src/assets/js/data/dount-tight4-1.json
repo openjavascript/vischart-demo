@@ -7,8 +7,8 @@
         "orient": "vertical",
         "bottom": "16px",
         "right": "8%",
-        "itemWidth": 10,
-        "itemHeight": 10,
+        "itemWidth": 4,
+        "itemHeight": 12,
         "borderRadius": 4,
         "column": 3,
         "data": [

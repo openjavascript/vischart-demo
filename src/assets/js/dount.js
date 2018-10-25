@@ -59,7 +59,7 @@ font.load().then(function () {
 
         window.tmpTimeout = setTimeout( ()=>{
             console.log( 'onresize', Date.now(), window.innerHeight );
-            let size = window.innerHeight / 2;
+            let size = Math.min( window.innerWidth, window.innerHeight ) * .6;
 
             dmins.resize( size, size );
         }, 1000 );
@@ -78,6 +78,7 @@ font.load().then(function () {
         common.setColor( data );
         //dmins.resize( 500, 500, data );
         dmins.update( data, 1, 0 );
+        //dmins.update( data );
 
     }, 2000 );
 

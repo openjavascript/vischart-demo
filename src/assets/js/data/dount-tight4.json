@@ -3,6 +3,7 @@
         "trigger": "item",
         "formatter": "{a} <br/>{b}: {c} ({d}%)"
     },
+    "precision": 2,
     "legend": {
         "orient": "vertical",
         "bottom": "16px",

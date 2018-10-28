@@ -8,6 +8,7 @@ import * as base64img from './data/base64img.js';
 
 let Data = require( './data/gauge.json' );
 let Data0 = require( './data/gauge0.json' );
+let Data1 = require( './data/gauge1.json' );
 let Data1100 = require( './data/gauge1100.json' );
 let DataDisableAnimation = require( './data/gauge-disable-animation.json' );
 
@@ -57,7 +58,8 @@ font.load().then(function () {
     });
 
     setInterval( ()=>{
-        let data = Data1100;
+        //let data = Data1100;
+        let data = Data1;
             data 
             && data.series 
             && data.series.map( item => {

@@ -4,8 +4,8 @@
             "type": "gauge",
             "data": [
                 {
-                    "value": 1100,
-                    "total": 1100
+                    "value": 1,
+                    "total": 1
                 }
             ]
         }

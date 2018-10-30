@@ -38,7 +38,7 @@ let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
     //let data = require( './data/dount.json' );
-    let data = require( './data/dount-tight4.json' );
+    let data = require( './data/dount-tight4-2.json' );
     //let data = require( './data/dount-real1.json' );
     //let data = require( './data/dount-disable-animation.json' );
         data 
@@ -64,7 +64,7 @@ font.load().then(function () {
             dmins.resize( size, size );
         }, 1000 );
     });
-    setInterval( ()=>{
+    /*setInterval( ()=>{
     //setTimeout( ()=>{
         //let data = require( './data/dount-tight8-1.json' );
         let data = require( './data/dount-tight4-1.json' );
@@ -80,7 +80,7 @@ font.load().then(function () {
         dmins.update( data, 1, 0 );
         //dmins.update( data );
 
-    }, 2000 );
+    }, 2000 );*/
 
 /*
 */

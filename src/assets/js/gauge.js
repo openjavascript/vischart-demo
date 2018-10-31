@@ -9,6 +9,7 @@ import * as base64img from './data/base64img.js';
 let Data = require( './data/gauge.json' );
 let Data0 = require( './data/gauge0.json' );
 let Data1 = require( './data/gauge1.json' );
+let DataZero = require( './data/gaugezero.json' );
 let Data1100 = require( './data/gauge1100.json' );
 let DataDisableAnimation = require( './data/gauge-disable-animation.json' );
 
@@ -34,7 +35,8 @@ font.load().then(function () {
 
     let box = document.querySelector('#twoBox');
 
-    let data = Data;
+    //let data = Data;
+    let data = DataZero;
         //data = DataDisableAnimation;
         data 
         && data.series 
@@ -51,15 +53,30 @@ font.load().then(function () {
 
         window.tmpTimeout = setTimeout( ()=>{
             console.log( 'onresize', Date.now(), window.innerHeight );
+            /*
             let size = window.innerHeight / 2;
 
             dmins.resize( size, size );
+            */
+            let data = DataZero;
+                data 
+                && data.series 
+                && data.series.map( item => {
+                    item.background = background;
+                });
+            //dmins.resize( 500, 500 ); 
+            dmins.update( data, 1, 0 );
+
         }, 1000 );
+
+
     });
 
-    setInterval( ()=>{
+    //setInterval( ()=>{
+    setTimeout( ()=>{
         //let data = Data1100;
         let data = Data1;
+        //let data = DataZero;
             data 
             && data.series 
             && data.series.map( item => {
@@ -67,7 +84,7 @@ font.load().then(function () {
             });
         //dmins.resize( 500, 500 ); 
         dmins.update( data, 1, 0 );
-    }, 5000 );
+    }, 2000 );
 
 /*
 

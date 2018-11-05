@@ -39,6 +39,7 @@ font.load().then(function () {
 
     //let data = require( './data/dount.json' );
     let data = require( './data/dount-tight4-2.json' );
+    //let data = require( './data/dount-custom-label.json' );
     //let data = require( './data/dount-real1.json' );
     //let data = require( './data/dount-disable-animation.json' );
         data 

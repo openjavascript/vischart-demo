@@ -38,7 +38,7 @@ let font = new fontfaceobserver( 'HuXiaoBoKuHei' );
 font.load().then(function () {
 
     //let data = require( './data/dount.json' );
-    let data = require( './data/dount-tight4-2.json' );
+    let data = require( './data/dount-tight4-2-callback.json' );
     //let data = require( './data/dount-custom-label.json' );
     //let data = require( './data/dount-real1.json' );
     //let data = require( './data/dount-disable-animation.json' );
@@ -48,6 +48,16 @@ font.load().then(function () {
             item.background = background;
         });
     common.setColor( data );
+
+    data.series[0].label = {
+        "show": true,
+        "fontSize": 16,
+        "position": "outside",
+        //"formatter": '{d}%'
+        "formatter": ( params, total ) => {
+            return `${((params.value * 100) / total).toFixed(2)}%`;
+        }
+    };
 
     let box = document.querySelector('#twoBox');
         

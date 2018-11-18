@@ -41,6 +41,7 @@ module.exports = {
         extensions: ['.js']
         , alias: {
             "vischart": getUserHome() + "/udocs/website/vis/vischart/dist/index.js"
+            //, "vischartbase": getUserHome() + "/udocs/website/vis/vischartbase/dist/index.js"
             //"vischart": "/home/suches/udocs/website/vis/vischart/dist/index.js"
         }
     },

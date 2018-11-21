@@ -74,8 +74,8 @@ font.load().then(function () {
 
     //setInterval( ()=>{
     setTimeout( ()=>{
-        //let data = Data1100;
-        let data = Data1;
+        let data = Data1100;
+        //let data = Data1;
         //let data = DataZero;
             data 
             && data.series 
